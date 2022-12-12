@@ -1,12 +1,29 @@
-import { Info, InfoOutlined, PlayArrow } from '@material-ui/icons'
+import {InfoOutlined, PlayArrow } from '@material-ui/icons'
 import React from 'react'
 import img from '../../assets/images/bcg2.png'
 import img1 from '../../assets/images/img1.jpg'
 import './hero.scss'
-function Hero() {
+function Hero({type}) {
   return (
     <div className='hero'>
       <img src={img} className="hero_img" alt="bcg" />
+      { type && 
+        <div className="category">
+          <p>{type}:</p>
+          <select name="genre" id="genre">
+            <option>Genre</option>
+            <option value="drama">Drama</option>
+            <option value="fiction">Fiction</option>
+            <option value="action">Action</option>
+            <option value="sci-fi">Sci-fi</option>
+            <option value="anime">Anime</option>
+            <option value="horror">Horror</option>
+            <option value="crime">Crime</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="thriller">Thriller</option>
+          </select>
+        </div>
+       }
       <div className="features">
         <img src={img1} className="features_img" alt="" />
         <div className="features_text">

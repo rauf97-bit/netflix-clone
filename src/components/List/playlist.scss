@@ -1,0 +1,51 @@
+.wrapper{
+  background-color: rgba(39, 38, 38);
+
+  .playlist {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    margin-left: 50px;
+    position: relative;
+    
+  .title {
+    color: #fff;
+    padding: 20px 0;
+    margin: 0;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  
+  .container {
+    position: relative;
+    background: #fff;
+    margin-left: 50px;
+    .gallery{
+      position: relative;
+      transform: translateX(0px);
+      transition: all 1s ease;
+      display: flex;
+      width: max-content;
+      gap: 10px;
+      background:rgba(39, 38, 38) ;
+    }
+    .arrow {
+      position: absolute;
+      height: 200px;
+      width: 50px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      z-index: 20;
+      background: rgb(20, 19, 19, 0.6);
+      cursor: pointer;
+      &.left {
+        left: -50px;
+      }
+
+      &.right {
+        right: 50px;
+      }
+    }
+  }
+}
+  }

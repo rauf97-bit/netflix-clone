@@ -7,7 +7,7 @@ import {
   ThumbUpOutlined,
 } from "@material-ui/icons";
 import { useState } from "react";
-
+import trailer from '../../assets/videos/demo.mp4'
 function ListCard({ num }) {
   const [isHovered, setIsHovered] = useState(false);
   return (
@@ -18,6 +18,12 @@ function ListCard({ num }) {
       // style={{ left : isHovered && num * 230  - 50 + num * 5}}
     >
       <img src={img} alt="" />
+      {
+        isHovered &&
+        (
+          <>
+
+      <video src={trailer} autoPlay={true} loop></video>
       <div className="movie_info">
         <div className="icons">
           <PlayArrow className="movie_icon" />
@@ -37,6 +43,9 @@ function ListCard({ num }) {
           <p className="genre">Action</p>
         </div>
       </div>
+          </>
+        )
+      }
     </div>
   );
 }

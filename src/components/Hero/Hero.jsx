@@ -1,7 +1,7 @@
 import {InfoOutlined, PlayArrow } from '@material-ui/icons'
 import React from 'react'
 import img from '../../assets/images/bcg2.png'
-import img1 from '../../assets/images/img1.jpg'
+import img1 from "../../assets/images/logo.jpg";
 import './hero.scss'
 function Hero({type}) {
   return (
